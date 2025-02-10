@@ -1,1140 +1,799 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finder</title>
+    <link rel="shortcut icon" href="assets/images/finder.jpg" type="image/x-icon">
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Finder</title>
+    <!-- Font and CSS Links -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" href="assets/images/finder.jpg" type="image/x-icon">
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-        <!--linear icon css-->
-		<link rel="stylesheet" href="assets/css/linearicons.css">
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Header Top Start -->
+    <header id="header-top" class="header-top">
+        <ul>
+            <li>
+                <div class="header-top-left">
+                    <ul>
+                        <li class="select-opt">
+                            <label for="language">Language:</label>
+                            <select name="language" id="language" aria-label="Select Language">
+                                <option value="default">EN</option>
+                                <option value="Bangla">BN</option>
+                                <option value="Arabic">AB</option>
+                            </select>
+                        </li>
+                        <li class="select-opt">
+                            <label for="currency">Currency:</label>
+                            <select name="currency" id="currency" aria-label="Select Currency">
+                                <option value="usd">USD</option>
+                                <option value="euro">Euro</option>
+                                <option value="ken">KSH</option>
+                            </select>
+                        </li>
+                        <li class="select-opt">
+                            <a href="#" aria-label="Search"><span class="lnr lnr-magnifier"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="head-responsive-right pull-right">
+                <div class="header-top-right">
+                    <ul>
+                        <li class="header-top-contact">+254 742 710798</li>
+                        <li class="header-top-contact"><a href="#">Sign In</a></li>
+                        <li class="header-top-contact"><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header><!--/.header-top-->
 
-		<!--flaticon.css-->
-        <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Top Area Start -->
+    <section class="top-area">
+        <div class="header-area">
+            <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><span>Finder</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="scroll active"><a href="#home">Home</a></li>
+                            <li class="scroll"><a href="#works">How It Works</a></li>
+                            <li class="scroll"><a href="#explore">Explore</a></li>
+                            <li class="scroll"><a href="#reviews">Review</a></li>
+                            <li class="scroll"><a href="#blog">Blog</a></li>
+                            <li class="scroll"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </section><!-- /.top-area-->
 
-		<!--slick.css-->
-        <link rel="stylesheet" href="assets/css/slick.css">
-		<link rel="stylesheet" href="assets/css/slick-theme.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- Welcome Hero Section Start -->
+    <section id="home" class="welcome-hero">
+        <div class="container">
+            <div class="welcome-hero-txt">
+                <h2>The Best Place to Discover and Explore <br> Everything You Need</h2>
+                <p>Find the best places, restaurants, hotels, real estate, and much more with just one click.</p>
+            </div>
+            <div class="welcome-hero-search-box">
+                <div class="welcome-hero-form">
+                    <div class="single-welcome-hero-form">
+                        <h3>What are you looking for?</h3>
+                        <form action="index.html" aria-label="Search Form">
+                            <input type="text" placeholder="e.g., place, restaurant, food, automobile" required aria-label="Search Query" />
+                        </form>
+                        <div class="welcome-hero-form-icon">
+                            <i class="flaticon-list-with-dots"></i>
+                        </div>
+                    </div>
+                    <div class="single-welcome-hero-form">
+                        <h3>Location</h3>
+                        <form action="index.html" aria-label="Location Form">
+                            <input type="text" placeholder="e.g., London, New York, Rome" required aria-label="Location" />
+                        </form>
+                        <div class="welcome-hero-form-icon">
+                            <i class="flaticon-gps-fixed-indicator"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-hero-search">
+                    <button class="welcome-hero-btn" onclick="window.location.href='#'">
+                        Search <i data-feather="search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Hero Section End -->
 
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!--header-top start -->
-		<header id="header-top" class="header-top">
-			<ul>
-				<li>
-					<div class="header-top-left">
-						<ul>
-							<li class="select-opt">
-								<select name="language" id="language">
-									<option value="default">EN</option>
-									<option value="Bangla">BN</option>
-									<option value="Arabic">AB</option>
-								</select>
-							</li>
-							<li class="select-opt">
-								<select name="currency" id="currency">
-									<option value="usd">USD</option>
-									<option value="euro">Euro</option>
-									<option value="bdt">BDT</option>
-								</select>
-							</li>
-							<li class="select-opt">
-								<a href="#"><span class="lnr lnr-magnifier"></span></a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="head-responsive-right pull-right">
-					<div class="header-top-right">
-						<ul>
-							<li class="header-top-contact">
-								+1 222 777 6565
-							</li>
-							<li class="header-top-contact">
-								<a href="#">sign in</a>
-							</li>
-							<li class="header-top-contact">
-								<a href="#">register</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-					
-		</header><!--/.header-top-->
-		<!--header-top end -->
+    <!-- List Topics Section Start -->
+    <section id="list-topics" class="list-topics">
+        <div class="container">
+            <div class="list-topics-content">
+                <ul>
+                    <li>
+                        <div class="single-list-topics-content">
+                            <div class="single-list-topics-icon">
+                                <i class="flaticon-restaurant"></i>
+                            </div>
+                            <h2><a href="#">Restaurant</a></h2>
+                            <p>150 listings</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list-topics-content">
+                            <div class="single-list-topics-icon">
+                                <i class="flaticon-travel"></i>
+                            </div>
+                            <h2><a href="#">Destination</a></h2>
+                            <p>214 listings</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list-topics-content">
+                            <div class="single-list-topics-icon">
+                                <i class="flaticon-building"></i>
+                            </div>
+                            <h2><a href="#">Hotels</a></h2>
+                            <p>185 listings</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list-topics-content">
+                            <div class="single-list-topics-icon">
+                                <i class="flaticon-pills"></i>
+                            </div>
+                            <h2><a href="#">Healthcare</a></h2>
+                            <p>200 listings</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-list-topics-content">
+                            <div class="single-list-topics-icon">
+                                <i class="flaticon-transport"></i>
+                            </div>
+                            <h2><a href="#">Automotive</a></h2>
+                            <p>120 listings</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- List Topics Section End -->
 
-		<!-- top-area Start -->
-		<section class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+    <!-- How It Works Section Start -->
+    <section id="works" class="works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Discover the simplicity of our platform and how it can serve you.</p>
+            </div>
+            <div class="works-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-how-works">
+                            <div class="single-how-works-icon">
+                                <i class="flaticon-lightbulb-idea"></i>
+                            </div>
+                            <h2><a href="#">Choose <span> What to</span> Do</a></h2>
+                            <p>Find a variety of activities that suit your interests. From adventure to relaxation, we provide the best options for you.</p>
+                            <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-how-works">
+                            <div class="single-how-works-icon">
+                                <i class="flaticon-networking"></i>
+                            </div>
+                            <h2><a href="#">Find <span> What You Want</span></a></h2>
+                            <p>Effortlessly search for the best spots tailored to your preferences. Our user-friendly tool helps you find exactly what you need.</p>
+                            <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-how-works">
+                            <div class="single-how-works-icon">
+                                <i class="flaticon-location-on-road"></i>
+                            </div>
+                            <h2><a href="#">Explore <span> Amazing</span> Places</a></h2>
+                            <p>Discover stunning locations and hidden gems. Our platform guides you through the best destinations with ease.</p>
+                            <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works Section End -->
 
-			        <div class="container">
+    <!-- Explore Section Start -->
+    <section id="explore" class="explore">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore</h2>
+                <p>Discover new places, food, cultures around the world, and much more.</p>
+            </div>
+            <div class="explore-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-explore-item">
+                            <div class="single-explore-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.31_587096a8.jpg" alt="Tommy Helfinger Bar" height="1104" width="736">
+                                <div class="single-explore-img-info">
+                                    <button onclick="window.location.href='#'">Best Rated</button>
+                                    <div class="single-explore-image-icon-box">
+                                        <ul>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-arrows-alt"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-bookmark-o"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-explore-txt bg-theme-1">
+                                <h2><a href="#">Lincoln's Wines and Spirit</a></h2>
+                                <p class="explore-rating-price">
+                                    <span class="explore-rating">5.0</span>
+                                    <a href="#">10 ratings</a>
+                                    <span class="explore-price-box">from <span class="explore-price">$5 - $300</span></span>
+                                    <a href="#">Restaurant</a>
+                                </p>
+                                <div class="explore-person">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="explore-person-img">
+                                                <a href="#">
+                                                    <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.28_40626b89.jpg" alt="explore person">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Experience the vibrant atmosphere of Lincoln's Wines and Spirit. Join us for an unforgettable dining experience, with top-notch service and a diverse menu.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="explore-open-close-part">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <button class="close-btn open-btn" onclick="window.location.href='#'">Open Now</button>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="explore-map-icon">
+                                                <a href="#"><i data-feather="map-pin"></i></a>
+                                                <a href="#"><i data-feather="upload"></i></a>
+                                                <a href="#"><i data-feather="heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-explore-item">
+                            <div class="single-explore-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.31_fb5ef581.jpg" alt="Swim and Dine Resort" height="1104" width="736">
+                                <div class="single-explore-img-info">
+                                    <button onclick="window.location.href='#'">Featured</button>
+                                    <div class="single-explore-image-icon-box">
+                                        <ul>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-arrows-alt"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-bookmark-o"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-explore-txt bg-theme-2">
+                                <h2><a href="#">Lincoln's Resort</a></h2>
+                                <p class="explore-rating-price">
+                                    <span class="explore-rating">4.5</span>
+                                    <a href="#">8 ratings</a>
+                                    <span class="explore-price-box">from <span class="explore-price">$50 - $500</span></span>
+                                    <a href="#">Hotel</a>
+                                </p>
+                                <div class="explore-person">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="explore-person-img">
+                                                <a href="#">
+                                                    <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.29_3c95cf49.jpg" alt="explore person">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Indulge in luxury at the Swim and Dine Resort. Enjoy our exquisite facilities, including a stunning pool and gourmet dining options.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="explore-open-close-part">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <button class="close-btn" onclick="window.location.href='#'">Closed Now</button>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="explore-map-icon">
+                                                <a href="#"><i data-feather="map-pin"></i></a>
+                                                <a href="#"><i data-feather="upload"></i></a>
+                                                <a href="#"><i data-feather="heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-explore-item">
+                            <div class="single-explore-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.31_f8ecd251.jpg" alt="Europe Tour" height="1104" width="736">
+                                <div class="single-explore-img-info">
+                                    <button onclick="window.location.href='#'">Best Rated</button>
+                                    <div class="single-explore-image-icon-box">
+                                        <ul>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-arrows-alt"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-bookmark-o"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-explore-txt bg-theme-3">
+                                <h2><a href="#">Europe Tour</a></h2>
+                                <p class="explore-rating-price">
+                                    <span class="explore-rating">5.0</span>
+                                    <a href="#">15 ratings</a>
+                                    <span class="explore-price-box">from <span class="explore-price">$5k - $10k</span></span>
+                                    <a href="#">Destination</a>
+                                </p>
+                                <div class="explore-person">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="explore-person-img">
+                                                <a href="#">
+                                                    <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.28_69d8af66.jpg" alt="explore person">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Embark on an unforgettable journey through Europe. Explore historic landmarks, stunning landscapes, and vibrant cultures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="explore-open-close-part">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <button class="close-btn" onclick="window.location.href='#'">Closed Now</button>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="explore-map-icon">
+                                                <a href="#"><i data-feather="map-pin"></i></a>
+                                                <a href="#"><i data-feather="upload"></i></a>
+                                                <a href="#"><i data-feather="heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-explore-item">
+                            <div class="single-explore-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.30_8bbaf70b.jpg" alt="Bungalow with Swimming Pool" height="1104" width="736">
+                                <div class="single-explore-img-info">
+                                    <button onclick="window.location.href='#'">Most Viewed</button>
+                                    <div class="single-explore-image-icon-box">
+                                        <ul>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-arrows-alt"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-explore-image-icon">
+                                                    <i class="fa fa-bookmark-o"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-explore-txt bg-theme-4">
+                                <h2><a href="#">Bungalow with Swimming Pool</a></h2>
+                                <p class="explore-rating-price">
+                                    <span class="explore-rating">4.8</span>
+                                    <a href="#">12 ratings</a>
+                                    <span class="explore-price-box">from <span class="explore-price">$200 - $800</span></span>
+                                    <a href="#">Accommodation</a>
+                                </p>
+                                <div class="explore-person">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="explore-person-img">
+                                                <a href="#">
+                                                    <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.28_b6660df8.jpg" alt="explore person">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <p>Relax in a beautiful bungalow with a swimming pool. Perfect for family vacations and getaways.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="explore-open-close-part">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <button class="close-btn" onclick="window.location.href='#'">Open Now</button>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="explore-map-icon">
+                                                <a href="#"><i data-feather="map-pin"></i></a>
+                                                <a href="#"><i data-feather="upload"></i></a>
+                                                <a href="#"><i data-feather="heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Explore Section End -->
 
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">list<span>race</span></a>
+    <!-- Reviews Section Start -->
+    <section id="reviews" class="reviews">
+        <div class="section-header">
+            <h2>Client Reviews</h2>
+            <p>What our clients say about us</p>
+        </div>
+        <div class="reviews-content">
+            <div class="testimonial-carousel">
+                <div class="single-testimonial-box" role="article" aria-labelledby="testimonial1">
+                    <div class="testimonial-description">
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="assets/images/clients/c1.png" alt="Tom Leakar" >
+                            </div>
+                            <div class="testimonial-person">
+                                <h3 id="testimonial1">Thomas Shelby</h3>
+                                <h4>London, UK</h4>
+                                <div class="testimonial-person-star" aria-label="5 out of 5 stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-comment">
+                            <p>"Their service is exceptional! I was able to find exactly what I needed quickly and easily. Highly recommend!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial-box" role="article" aria-labelledby="testimonial2">
+                    <div class="testimonial-description">
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.27_24e53e23.jpg " alt="Monirul Islam" height="50" width="50">
+                            </div>
+                            <div class="testimonial-person">
+                                <h3 id="testimonial2">Najma Mohammed</h3>
+                                <h4>Mandera, Kenya</h4>
+                                <div class="testimonial-person-star" aria-label="5 out of 5 stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-comment">
+                            <p>"A seamless experience from start to finish. The platform is user-friendly and the support team is fantastic!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial-box" role="article" aria-labelledby="testimonial3">
+                    <div class="testimonial-description">
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="assets/images/clients/c3.png" alt="Shohrab Hossain">
+                            </div>
+                            <div class="testimonial-person">
+                                <h3 id="testimonial3">Kimani</h3>
+                                <h4>Kisumu, Kenya</h4>
+                                <div class="testimonial-person-star" aria-label="5 out of 5 stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-comment">
+                            <p>"An outstanding platform with great features. It made finding what I needed incredibly easy. Will definitely use again!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial-box" role="article" aria-labelledby="testimonial4">
+                    <div class="testimonial-description">
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="assets/images/clients/c4.png" alt="Jane Doe">
+                            </div>
+                            <div class="testimonial-person">
+                                <h3 id="testimonial4">Lincoln Kiprop</h3>
+                                <h4>Nairobi, Kenya</h4>
+                                <div class="testimonial-person-star" aria-label="5 out of 5 stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-comment">
+                            <p>"Highly satisfied with the service. The recommendations were spot-on and the whole process was smooth. Two thumbs up!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section End -->
 
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
+    <!-- Statistics Section Start -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Achievements</h2>
+                <p>Discover our accomplishments and milestones.</p>
+            </div>
+            <div class="statistics-counter">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-statistics-box">
+                        <div class="statistics-content">
+                            <div class="counter">90</div> <span>K+</span>
+                        </div>
+                        <h3>Listings</h3>
+                        <p>Explore over 90,000 verified listings across various categories.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-statistics-box">
+                        <div class="statistics-content">
+                            <div class="counter">40</div> <span>K+</span>
+                        </div>
+                        <h3>Listing Categories</h3>
+                        <p>Choose from more than 40,000 diverse listing categories.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-statistics-box">
+                        <div class="statistics-content">
+                            <div class="counter">65</div> <span>K+</span>
+                        </div>
+                        <h3>Visitors</h3>
+                        <p>Join our community of over 65,000 satisfied visitors.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-statistics-box">
+                        <div class="statistics-content">
+                            <div class="counter">50</div> <span>K+</span>
+                        </div>
+                        <h3>Happy Clients</h3>
+                        <p>Over 50,000 clients have found what they needed through us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Statistics Section End -->
 
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="#works">how it works</a></li>
-			                    <li class="scroll"><a href="#explore">explore</a></li>
-			                    <li class="scroll"><a href="#reviews">review</a></li>
-			                    <li class="scroll"><a href="#blog">blog</a></li>
-			                    <li class="scroll"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-		    <div class="clearfix"></div>
+    <!-- Blog Section Start -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>News and Articles</h2>
+                <p>Stay up to date with our latest news and articles.</p>
+            </div>
+            <div class="blog-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-blog-item">
+                            <div class="single-blog-item-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.29_58232a36.jpg" alt="How to Find Your Desired Place Quickly" height="1104" width="736" >
+                            </div>
+                            <div class="single-blog-item-txt">
+                                <h2><a href="#">How to Find Your Desired Place Quickly</a></h2>
+                                <h4>Posted <span>by</span> <a href="#">Lincoln</a> January 2025</h4>
+                                <p>Discover tips and tricks to streamline your search process and find the perfect place in no time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-blog-item">
+                            <div class="single-blog-item-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.30_2ce34a6f.jpg" alt="Top 10 Hidden Gems to Explore" height="1104" width="736">
+                            </div>
+                            <div class="single-blog-item-txt">
+                                <h2><a href="#">Top 10 Hidden Gems to Explore</a></h2>
+                                <h4>Posted <span>by</span> <a href="#">Najma</a> December 2024</h4>
+                                <p>Uncover lesser-known destinations that offer unique experiences and breathtaking views.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-blog-item">
+                            <div class="single-blog-item-img">
+                                <img src="assets/imagess/WhatsApp%20Image%202025-02-10%20at%2012.23.30_811541db.jpg" alt="The Ultimate Guide to Local Cuisine" height="1104" width="736">
+                            </div>
+                            <div class="single-blog-item-txt">
+                                <h2><a href="#">The Ultimate Guide to Local Cuisine</a></h2>
+                                <h4>Posted <span>by</span> <a href="#">Kimani</a> February 2025</h4>
+                                <p>Explore the rich and diverse culinary traditions from around the world and find out where to taste the best local dishes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
 
-		</section><!-- /.top-area-->
-		<!-- top-area End -->
+    <!-- Subscription Section Start -->
+    <section id="contact" class="subscription">
+        <div class="container">
+            <div class="subscribe-title text-center">
+                <h2>Do you want to add your business listing with us?</h2>
+                <p>List your business with Finder and we will help promote it effectively.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="subscription-input-group">
+                        <form action="#" aria-label="Subscription Form">
+                            <input type="email" class="subscription-input-form" placeholder="Enter your email here" required aria-label="Email Address">
+                            <button class="appsLand-btn subscribe-btn" type="submit">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Subscription Section End -->
 
-		<!--welcome-hero start -->
-		<section id="home" class="welcome-hero">
-			<div class="container">
-				<div class="welcome-hero-txt">
-					<h2>best place to find and explore <br> that all you need </h2>
-					<p>
-						Find Best Place, Restaurant, Hotel, Real State and many more think in just One click 
-					</p>
-				</div>
-				<div class="welcome-hero-serch-box">
-					<div class="welcome-hero-form">
-						<div class="single-welcome-hero-form">
-							<h3>what?</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
-							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-list-with-dots"></i>
-							</div>
-						</div>
-						<div class="single-welcome-hero-form">
-							<h3>location</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: london, newyork, rome" />
-							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-gps-fixed-indicator"></i>
-							</div>
-						</div>
-					</div>
-					<div class="welcome-hero-serch">
-						<button class="welcome-hero-btn" onclick="window.location.href='#'">
-							 search  <i data-feather="search"></i> 
-						</button>
-					</div>
-				</div>
-			</div>
+    <!-- Footer Start -->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><span>Finder</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <ul class="footer-menu-item">
+                        <li class="scroll"><a href="#works">How It Works</a></li>
+                        <li class="scroll"><a href="#explore">Explore</a></li>
+                        <li class="scroll"><a href="#reviews">Review</a></li>
+                        <li class="scroll"><a href="#blog">Blog</a></li>
+                        <li class="scroll"><a href="#contact">Contact</a></li>
+                        <li class="scroll"><a href="#contact">My Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hm-footer-copyright">
+            <div class="row">
+                <div class="col-sm-5">
+                    <p>
+                        &copy; Copyright. Designed and developed by <a href="https://www.themesine.com/">Lincoln <3</a>.
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <div class="footer-social">
+                        <span><i class="fa fa-phone"> +254 742 710798</i></span>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+    <div id="scroll-Top">
+        <div class="return-to-top">
+            <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="top" title="Back to Top" aria-hidden="true"></i>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
 
-		<!--list-topics start -->
-		<section id="list-topics" class="list-topics">
-			<div class="container">
-				<div class="list-topics-content">
-					<ul>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-restaurant"></i>
-								</div>
-								<h2><a href="#">resturent</a></h2>
-								<p>150 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-travel"></i>
-								</div>
-								<h2><a href="#">destination</a></h2>
-								<p>214 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-building"></i>
-								</div>
-								<h2><a href="#">hotels</a></h2>
-								<p>185 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-pills"></i>
-								</div>
-								<h2><a href="#">healthcaree</a></h2>
-								<p>200 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-transport"></i>
-								</div>
-								<h2><a href="#">automotion</a></h2>
-								<p>120 listings</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div><!--/.container-->
+<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-		</section><!--/.list-topics-->
-		<!--list-topics end-->
+<script src="assets/js/jquery.js"></script>
+<!-- modernizr.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!-- bootstrap.min.js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- bootsnav js -->
+<script src="assets/js/bootsnav.js"></script>
+<!-- feather.min.js -->
+<script src="assets/js/feather.min.js"></script>
+<!-- counter js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!-- slick.min.js -->
+<script src="assets/js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/custom.js"></script>
 
-		<!--works start -->
-		<section id="works" class="works">
-			<div class="container">
-				<div class="section-header">
-					<h2>how it works</h2>
-					<p>Learn More about how our website works</p>
-				</div><!--/.section-header-->
-				<div class="works-content">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-lightbulb-idea"></i>
-								</div>
-								<h2><a href="#">choose <span> what to</span> do</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-networking"></i>
-								</div>
-								<h2><a href="#">find <span> what you want</span></a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-location-on-road"></i>
-								</div>
-								<h2><a href="#">explore <span> amazing</span> place</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.container-->
-		
-		</section><!--/.works-->
-		<!--works end -->
-
-		<!--explore start -->
-		<section id="explore" class="explore">
-			<div class="container">
-				<div class="section-header">
-					<h2>explore</h2>
-					<p>Explore New place, food, culture around the world and many more</p>
-				</div><!--/.section-header-->
-				<div class="explore-content">
-					<div class="row">
-						<div class=" col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e1.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-1">
-									<h2><a href="#">tommy helfinger bar</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">5.0</span>
-										<a href="#"> 10 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5$-300$</span>
-										</span>
-										 <a href="#">resturent</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e2.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">featured</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-2">
-									<h2><a href="#">swim and dine resort</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">4.5</span>
-										<a href="#"> 8 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">50$-500$</span>
-										</span>
-										 <a href="#">hotel</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn open-btn" onclick="window.location.href='#'">open now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e3.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-3">
-									<h2><a href="#">europe tour</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">5.0</span>
-										<a href="#"> 15 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5k$-10k$</span>
-										</span>
-										 <a href="#">destination</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e4.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">most view</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-4">
-									<h2><a href="#">banglow with swiming pool</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">5.0</span>
-										<a href="#"> 10 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">10k$-15k$</span>
-										</span>
-										 <a href="#">real estate</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e5.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">featured</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-2">
-									<h2><a href="#">vintage car expo</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">4.2</span>
-										<a href="#"> 8 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">500$-1200$</span>
-										</span>
-										 <a href="#">automotion</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn open-btn" onclick="window.location.href='#'">open now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-explore-item">
-								<div class="single-explore-img">
-									<img src="assets/images/explore/e6.jpg" alt="explore image">
-									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
-										<div class="single-explore-image-icon-box">
-											<ul>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-arrows-alt"></i>
-													</div>
-												</li>
-												<li>
-													<div class="single-explore-image-icon">
-														<i class="fa fa-bookmark-o"></i>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="single-explore-txt bg-theme-5">
-									<h2><a href="#">thailand tour</a></h2>
-									<p class="explore-rating-price">
-										<span class="explore-rating">5.0</span>
-										<a href="#"> 15 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5k$-10k$</span>
-										</span>
-										 <a href="#">destination</a>
-									</p>
-									<div class="explore-person">
-										<div class="row">
-											<div class="col-sm-2">
-												<div class="explore-person-img">
-													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
-													</a>
-												</div>
-											</div>
-											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="explore-open-close-part">
-										<div class="row">
-											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
-											</div>
-											<div class="col-sm-7">
-												<div class="explore-map-icon">
-													<a href="#"><i data-feather="map-pin"></i></a>
-													<a href="#"><i data-feather="upload"></i></a>
-													<a href="#"><i data-feather="heart"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.container-->
-
-		</section><!--/.explore-->
-		<!--explore end -->
-
-		<!--reviews start -->
-		<section id="reviews" class="reviews">
-			<div class="section-header">
-				<h2>clients reviews</h2>
-				<p>What our client say about us</p>
-			</div><!--/.section-header-->
-			<div class="reviews-content">
-				<div class="testimonial-carousel">
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c1.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Tom Leakar</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c2.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>monirul islam</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c3.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Shohrab Hossain</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c4.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Tom Leakar</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c1.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Tom Leakar</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c2.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>monirul islam</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c3.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Shohrab Hossain</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-img">
-									<img src="assets/images/clients/c4.png" alt="clients">
-								</div><!--/.testimonial-img-->
-								<div class="testimonial-person">
-									<h2>Tom Leakar</h2>
-									<h4>london, UK</h4>
-									<div class="testimonial-person-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				</div>
-			</div>
-
-		</section><!--/.reviews-->
-		<!--reviews end -->
-
-		<!-- statistics strat -->
-		<section id="statistics"  class="statistics">
-			<div class="container">
-				<div class="statistics-counter"> 
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">90 </div> <span>K+</span>
-							</div><!--/.statistics-content-->
-							<h3>listings</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">40</div> <span>k+</span>
-							</div><!--/.statistics-content-->
-							<h3>listing categories</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">65</div> <span>k+</span>
-							</div><!--/.statistics-content-->
-							<h3>visitors</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">50</div> <span>k+</span>
-							</div><!--/.statistics-content-->
-							<h3>happy clients</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
-
-		</section><!--/.counter-->	
-		<!-- statistics end -->
-
-		<!--blog start -->
-		<section id="blog" class="blog" >
-			<div class="container">
-				<div class="section-header">
-					<h2>news and articles</h2>
-					<p>Always upto date with our latest News and Articles </p>
-				</div><!--/.section-header-->
-				<div class="blog-content">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="single-blog-item">
-								<div class="single-blog-item-img">
-									<img src="assets/images/blog/b1.jpg" alt="blog image">
-								</div>
-								<div class="single-blog-item-txt">
-									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
-									<h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-blog-item">
-								<div class="single-blog-item-img">
-									<img src="assets/images/blog/b2.jpg" alt="blog image">
-								</div>
-								<div class="single-blog-item-txt">
-									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
-									<h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-blog-item">
-								<div class="single-blog-item-img">
-									<img src="assets/images/blog/b3.jpg" alt="blog image">
-								</div>
-								<div class="single-blog-item-txt">
-									<h2><a href="#">How to find your Desired Place more quickly</a></h2>
-									<h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.container-->
-			
-		</section><!--/.blog-->
-		<!--blog end -->
-
-		<!--subscription strat -->
-		<section id="contact"  class="subscription">
-			<div class="container">
-				<div class="subscribe-title text-center">
-					<h2>
-						do you want to add your business listing with us?
-					</h2>
-					<p>
-						Listrace offer you to list your business with us and we very much able to promote your Business.
-					</p>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="subscription-input-group">
-							<form action="#">
-								<input type="email" class="subscription-input-form" placeholder="Enter your email here">
-								<button class="appsLand-btn subscribe-btn" onclick="window.location.href='#'">
-									creat account
-								</button>
-							</form>
-						</div>
-					</div>	
-				</div>
-			</div>
-
-		</section><!--/subscription-->	
-		<!--subscription end -->
-
-		<!--footer start-->
-		<footer id="footer"  class="footer">
-			<div class="container">
-				<div class="footer-menu">
-		           	<div class="row">
-			           	<div class="col-sm-3">
-			           		 <div class="navbar-header">
-				                <a class="navbar-brand" href="index.html">list<span>race</span></a>
-				            </div><!--/.navbar-header-->
-			           	</div>
-			           	<div class="col-sm-9">
-			           		<ul class="footer-menu-item">
-			                    <li class="scroll"><a href="#works">how it works</a></li>
-			                    <li class="scroll"><a href="#explore">explore</a></li>
-			                    <li class="scroll"><a href="#reviews">review</a></li>
-			                    <li class="scroll"><a href="#blog">blog</a></li>
-			                    <li class="scroll"><a href="#contact">contact</a></li>
-			                    <li class=" scroll"><a href="#contact">my account</a></li>
-			                </ul><!--/.nav -->
-			           	</div>
-		           </div>
-				</div>
-				<div class="hm-footer-copyright">
-					<div class="row">
-						<div class="col-sm-5">
-							<p>
-								&copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
-							</p><!--/p-->
-						</div>
-						<div class="col-sm-7">
-							<div class="footer-social">
-								<span><i class="fa fa-phone"> +1  (222) 777 8888</i></span>
-								<a href="#"><i class="fa fa-facebook"></i></a>	
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					
-				</div><!--/.hm-footer-copyright-->
-			</div><!--/.container-->
-
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-->
-		<!--footer end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
-
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-
-        <!--feather.min.js-->
-        <script  src="assets/js/feather.min.js"></script>
-
-        <!-- counter js -->
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-
-        <!--slick.min.js-->
-        <script src="assets/js/slick.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		     
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+</body>
 </html>
